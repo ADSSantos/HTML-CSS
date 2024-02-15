@@ -1,0 +1,36 @@
+.titulos {
+    text-align: center;
+}
+div {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+div:hover {
+   background-color: rgb(30, 144, 210);
+}
+
+#d4 {
+    background-color: rgb(12, 189, 233);
+    width: 150px;
+    height: 20px;
+}
+
+#d4:hover {
+    color: aliceblue;
+   
+}
+
+#d4 > p {
+    display: none;
+}
+
+#d4:hover > p {
+    display: block;
+    color: blue;
+    background-color: aquamarine;
+}
+

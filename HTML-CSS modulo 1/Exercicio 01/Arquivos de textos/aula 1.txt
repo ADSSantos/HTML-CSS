@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exercicio</title>
+</head>
+<body>
+    <h1>Ola, Mundo!</h1>
+    <hr> 
+    <p>Esse é meu primeiro documento HTML,ESTOU MUITO FELIZ!</p>
+    <p>
+        Estou aprendendo muito com curso em video!
+    </p>
+    
+</body>
+</html>
+
+Para abrir o codigo de inicio ,usa-se esclamação + enter.
+Para titulos na barra de endereço usa-se a tag <title>
+Para titulus com letra grande usa-se a tag <h1>
+Para paragrafos usa-se a tag </p>
+Para linhas horizontal usa-se a tag <hr>

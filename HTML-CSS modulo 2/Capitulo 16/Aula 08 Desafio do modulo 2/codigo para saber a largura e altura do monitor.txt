@@ -1,0 +1,12 @@
+  <p>A largura do seu monitor é: <span id="largura"></span> pixels</p>
+  <p>A altura do seu monitor é: <span id="altura"></span> pixels</p>
+
+  <script>
+    // Capturando a largura e altura da tela
+    var largura = window.screen.width;
+    var altura = window.screen.height;
+
+    // Exibindo os valores na página HTML
+    document.getElementById('largura').textContent = largura;
+    document.getElementById('altura').textContent = altura;
+  </script>

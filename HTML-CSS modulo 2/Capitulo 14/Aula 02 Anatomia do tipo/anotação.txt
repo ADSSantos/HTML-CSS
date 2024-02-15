@@ -1,0 +1,5 @@
+a base para criar fontes é a letra X misnusculo!
+
+SERIFA é uma linha imaginaria ,criado em algumas fontes para alinhas as letras!
+
+sans serif ,são as fontes sem serifa.

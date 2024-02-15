@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Imagem</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Policia  Politica</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Nonicias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste in perferendis nobis harum nesciunt quod error veritatis voluptates explicabo incidunt voluptatum assumenda libero, molestias sequi fuga fugiat enim placeat.</p>
+
+                <div>
+                    <img src="img/itajai-2364982_1280.jpg" alt="cidade">
+                    <article id="cidade">
+                        <p id="city">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel modi blanditiis vitae? Amet sit, aperiam odio repellendus maiores minus perspiciatis quod quos adipisci recusandae laborum architecto reiciendis laudantium facilis!</p>
+                    </article>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui exercitationem iste laborum. Labore veniam velit fugiat distinctio voluptatum, sunt doloribus tenetur, molestias quae hic tempora exercitationem quasi, quia reiciendis!</p>
+
+                <aside>
+                    <p>Escrito por Adriano Santos</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>adriano@</p>
+    </footer>
+</body>
+</html>
+
+Css
+body {
+    background-color: #ffe4c4;
+    
+}
+h1 {
+    color: darkred;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10PX;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+}
+
+header {
+    background-color: aliceblue;
+    height: 130px;
+   
+}
+
+nav {
+    background-color: #f5e5d1; 
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 6px #0a0a0a4f;
+    border-radius: 10px;
+    
+   
+}
+
+nav > a {
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+nav > a:hover{
+    color: gray;
+    
+    text-decoration: underline;
+}
+
+#noticias {
+    background-color: beige;
+    padding: 10px;
+}
+aside {
+    background-color: #f5e5d1;
+}
+
+footer {
+    background-color: #e9d0b2;
+    height: 40px;
+    text-align: center;
+    padding: 4px;
+}
+
+footer > p {
+    margin: opx;
+}
+div > img {
+    height: 400px;
+    border: solid 1px gray;
+    border-radius: 10px 0px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.384); 
+    
+}
+
+#cidade {
+    background-color: bisque;
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin-top: -400px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+}
+
+#city {
+    padding: 10px;
+}
+
+main {
+    border-radius: 20px;
+}

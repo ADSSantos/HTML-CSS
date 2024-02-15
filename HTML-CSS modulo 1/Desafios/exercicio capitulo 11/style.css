@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+  
+}
+h1 , p,h2{
+    color:#848484;
+    text-align: center;
+    font-family: "lato",sans-serif;
+}
+div ,h2 {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    border-radius: 30px;
+    box-shadow: 10px 848484;
+
+}
+header {
+    border-bottom: 1px solid#848484;
+    background-color: #1C1C1C;
+}
+
+.btn a {
+    text-align:center;
+    color: #1C1C1C;
+    text-decoration: none;
+    font-family: "lato",sans-serif;
+    font-size: 30px;
+    background-color: #848484;
+    width: 10%;
+    border-radius: 10px;
+}

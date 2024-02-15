@@ -1,0 +1,29 @@
+.titulos {
+    text-align: center;
+    text-justify: 1px;
+
+}
+a:visited {
+    color: rgb(255, 123, 0);
+}
+
+a:hover {
+    color: rgb(14, 13, 13);
+}
+
+a:active {
+    color: rgb(182, 179, 21);
+}
+
+a::before {
+    content: "-»";
+    text-decoration: none;
+    font-weight: normal;
+    color: gray;
+}
+a::after {
+    content: "«-";
+    text-decoration: none;
+    font-weight: normal;
+    color: gray;
+}

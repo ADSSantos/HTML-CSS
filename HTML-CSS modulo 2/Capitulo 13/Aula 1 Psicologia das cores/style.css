@@ -1,0 +1,23 @@
+body {
+    background-color: steelblue;
+}
+h1,h2,p {
+    color: blanchedalmond;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 14px;
+    color: rgb(14, 122, 211);
+}
+h1,h2 {
+    text-align: center;
+}
+
+div {
+    background-color: aliceblue;
+    width: 60px;
+    border-radius: 30px;
+}

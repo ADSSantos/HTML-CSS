@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes google</title>
+    <style>
+       @font-face {
+        font-family: "name";
+        src: url("fontes/THEGREATSUMMER.TTF") format(opentype),url(fontes/Namecat.otf) format(truetype);
+       }
+        h1 {
+            font-family: "name",'Times New Roman', Times, serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes google</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cum consequatur tempora deserunt ut ad corporis culpa doloremque itaque, enim nisi exercitationem incidunt ratione temporibus consectetur? Doloremque nihil animi debitis!</p>
+    <h2>Usando fontes baixadas externas.</h2>
+    <p>podemos usar varios sites para baixar fontes..um exemplo é o site <strong>dafonte</strong>.</p>
+    <p>Tipo de formato -» opentype otf, truetype ttf, embedded-opentype,truetype-aat Apple Advanced typograph,svg</p>
+</body>
+</html>

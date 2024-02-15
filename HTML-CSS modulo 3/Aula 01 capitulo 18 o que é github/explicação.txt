@@ -1,0 +1,3 @@
+Git é um repositorio local onde de maneira mais organizada para guardar seus trabalhos e codigos.
+
+GIT HUB faz o mesmo processo porem trata se de repositorio remoto!

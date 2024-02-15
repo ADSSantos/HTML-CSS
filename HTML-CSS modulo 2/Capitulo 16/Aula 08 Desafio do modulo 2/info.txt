@@ -1,0 +1,4 @@
+nesta aula vamos usar o mokflow para montar um gabarito do site
+usar font do google fonts
+uma fonte baixada do site dafont
+e cor do adobe color

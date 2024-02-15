@@ -1,0 +1,23 @@
+body {
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    color: rgb(50, 103, 163);
+    height: 200px;
+    width: 400px;
+
+    
+
+    padding: 130px;
+ 
+
+    margin: 200px auto;
+   
+
+    border: solid 1px rgb(184, 39, 39);
+
+    outline: 5px dashed black;
+}

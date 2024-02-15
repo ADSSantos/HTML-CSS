@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ,ou aumenta e diminua seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.jpg" type="image/jpg">
+
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.jpg" type="image/jpg">
+
+          <img src="imagens/fotog.jpg" alt="imagem flexivel">
+    </picture>
+
+    <p>Nesta aula vimos como o HTML 5 facilita a responsavidade das imagens ,com o uso das tags semanticas picture e source.</p>
+    
+</body>
+</html>
