@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escopo de titulo</title>
+    <title>Efeito zebrado</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -40,10 +40,20 @@
         }
 
 
+         /*Efeito zebrado*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+           }
+        
+        
+
+
+
+
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes.</h1>
+    <h1>Efeito zebrado.</h1>
 
 
     <!-- Anatomia para tabelas grandes
@@ -109,5 +119,9 @@
             </tr>
         </tfoot>
     </table>
+
+    <p>Para fazer o efeito zebrado usamos um pseudo elemento, <br>     tbody > tr:nth-child(2n) {
+        background-color: lightgray;
+    } tr é filho do tbody que recebe o pseudo nth-child() <br> o valor usado neste parametro define quantas linhas será afetada com a cor desejada,tambem aceita valores pares e impares em ingles. </p>
 </body>
 </html>
