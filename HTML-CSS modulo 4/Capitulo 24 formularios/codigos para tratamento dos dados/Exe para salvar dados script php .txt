@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            position: absolute;
+            left: 37%;
+            top: 30%;
+            width: 400px;
+            height: 200px;
+            border: 1px solid;
+        }
+
+        input {
+          margin-left:110px;
+          margin-top: 25px;
+        }
+
+        label#lb_nome {
+            position: absolute;
+            left: 27%;
+            top: 10%;
+        }
+
+        label#lb_sobrenome {
+            position: absolute;
+            left: 27%;
+            top: 34%;
+        }
+
+        input#btn {
+            position: absolute;
+            left: 15%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário.</h1>
+
+    <form method="post" action="processa_formulario.php">
+        <label for="nome" id="lb_nome">Nome:</label> <br> <input type="text" name="nome" id="nome">
+        <label for="sobrenome" id="lb_sobrenome">Sobrenome:</label> <br> <input type="text" name="sobrenome" id="sobrenome">
+        <input id="btn" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+Agora, crie um arquivo chamado processa_formulario.php no mesmo diretório que contém o seguinte código para processar os dados do formulário:
+
+<?php
+// Verifica se o método de requisição é POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Verifica se os campos "nome" e "sobrenome" foram preenchidos
+    if (!empty($_POST['nome']) && !empty($_POST['sobrenome'])) {
+        $nome = $_POST['nome'];
+        $sobrenome = $_POST['sobrenome'];
+
+        // Agora você pode fazer o que quiser com os dados,
+        // como inseri-los em um banco de dados ou exibi-los
+        // em uma página de confirmação, por exemplo.
+
+        // Neste exemplo, apenas exibiremos os dados:
+        echo "<p>Nome: $nome</p>";
+        echo "<p>Sobrenome: $sobrenome</p>";
+    } else {
+        echo "Por favor, preencha todos os campos do formulário.";
+    }
+} else {
+    // Se o método de requisição não for POST, redireciona de volta para o formulário
+    header("Location: formulario.html");
+    exit;
+}
+?>
+
+Este script PHP irá verificar se os campos "nome" e "sobrenome" foram preenchidos no formulário. Se sim, ele os exibirá. Se não, ele exibirá uma mensagem solicitando ao usuário que preencha todos os campos. Você pode ajustar este script para armazenar os dados em um banco de dados, enviar um e-mail ou realizar outras ações conforme necessário.

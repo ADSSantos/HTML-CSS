@@ -1,0 +1,40 @@
+MySQL:
+Com MySQL, você pode armazenar os dados do formulário em um banco de dados para posterior recuperação e análise. Isso requer um servidor MySQL configurado e acesso a ele.
+
+Você precisará de um script PHP para receber os dados do formulário e inseri-los no banco de dados MySQL. Aqui está um exemplo básico de como você pode fazer isso:
+
+php
+Copy code
+<?php
+// Conexão com o banco de dados
+$servername = "localhost";
+$username = "seu_usuario";
+$password = "sua_senha";
+$dbname = "seu_banco_de_dados";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifica a conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
+
+// Verifica se o método de requisição é POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Prepara e executa a query de inserção
+    $nome = $_POST['nome'];
+    $sobrenome = $_POST['sobrenome'];
+
+    $sql = "INSERT INTO sua_tabela (nome, sobrenome) VALUES ('$nome', '$sobrenome')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Registro inserido com sucesso.";
+    } else {
+        echo "Erro ao inserir registro: " . $conn->error;
+    }
+} else {
+    echo "Método de requisição inválido.";
+}
+
+$conn->close();
+?>

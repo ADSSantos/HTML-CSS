@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            left: 38%;
+            top: 10%;
+        }
+
+        form {
+            position: absolute;
+            left: 37%;
+            top: 30%;
+            width: 400px;
+            height: 200px;
+            border: 1px solid;
+        }
+
+        input {
+          margin-left:110px;
+          margin-top: 25px;
+        }
+
+        label#lb_nome {
+            position: absolute;
+            left: 27%;
+            top: 10%;
+           
+            
+       }
+
+       label#lb_sobrenome {
+            position: absolute;
+            left: 27%;
+            top: 34%;
+           
+            
+       }
+
+        input#btn {
+            position: absolute;
+            left: 15%;
+            top: 50%;
+        }
+
+        section{
+            width: 900px;
+            height:310px;
+            background-color: aqua;
+            position: absolute;
+            top: 55%;
+            left:25%;
+            padding: 10px;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario.</h1>
+
+    <form autocomplete="on" action="cadastro.php" method="post">
+        <label for="nome" id="lb_nome">Nome:</label> <br> <input type="text" name="entrada" id="nome">
+        <label for="sobrenome" id="lb_sobrenome">Sobrenome:</label> <br> <input type="text" name="entrada" id="Sobrenome">
+        <input id="btn" type="submit" value="Enviar" >
+    </form>
+
+    <section>
+        <p>NOTA:
+        
+            GET:
+            O método GET envia os dados do formulário como parte da URL.
+            Os dados são anexados à URL na forma de parâmetros de consulta (query parameters).
+            Limitação de tamanho: a quantidade de dados que podem ser enviados é limitada, geralmente limitada a alguns kilobytes.
+            Os dados são visíveis na barra de endereços do navegador.
+            Normalmente usado para enviar dados que não precisam ser seguros, como pesquisas ou solicitações de página.
+            É mais eficiente para transferência de dados pequenos. <br>
+            POST:
+            O método POST envia os dados do formulário no corpo da requisição HTTP.
+            Os dados não são visíveis na URL, tornando-os mais seguros para enviar informações sensíveis, como senhas.
+            Não há limite específico de tamanho para os dados enviados pelo método POST.
+            Os dados não são visíveis na barra de endereços do navegador.
+            Normalmente usado para enviar dados sensíveis ou grandes, como formulários de login, upload de arquivos, etc.
+            É menos eficiente que o método GET para transferência de dados pequenos, mas é mais seguro e mais apropriado para transferência de dados sensíveis. <br> <br> POST:
+            O método POST envia os dados do formulário no corpo da requisição HTTP.
+            Os dados não são visíveis na URL, tornando-os mais seguros para enviar informações sensíveis, como senhas.
+            Não há limite específico de tamanho para os dados enviados pelo método POST.
+            Os dados não são visíveis na barra de endereços do navegador.
+            Normalmente usado para enviar dados sensíveis ou grandes, como formulários de login, upload de arquivos, etc.
+            É menos eficiente que o método GET para transferência de dados pequenos, mas é mais seguro e mais apropriado para transferência de dados sensíveis. </p>
+    </section>
+</body>
+</html>

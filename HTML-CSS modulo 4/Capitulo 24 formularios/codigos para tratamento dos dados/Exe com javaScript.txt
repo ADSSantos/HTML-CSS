@@ -1,0 +1,37 @@
+
+Sim, é possível lidar com os dados do formulário usando JavaScript ou MySQL também.
+
+JavaScript:
+Com JavaScript, você pode manipular os dados do formulário diretamente no navegador do usuário antes de enviá-los para o servidor. Por exemplo, você pode validar os campos do formulário antes de permitir o envio ou realizar outras ações com os dados.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script>
+        function validarFormulario() {
+            var nome = document.getElementById('nome').value;
+            var sobrenome = document.getElementById('sobrenome').value;
+
+            if (nome === "" || sobrenome === "") {
+                alert("Por favor, preencha todos os campos do formulário.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Meu primeiro formulário.</h1>
+
+    <form onsubmit="return validarFormulario()" method="post" action="processa_formulario.php">
+        <label for="nome" id="lb_nome">Nome:</label> <br> <input type="text" name="nome" id="nome">
+        <label for="sobrenome" id="lb_sobrenome">Sobrenome:</label> <br> <input type="text" name="sobrenome" id="sobrenome">
+        <input id="btn" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
