@@ -11,10 +11,12 @@
         }
 
         body {
+            display: flex;
             background-color: aquamarine;
         }
 
         h1 {
+            display: block;
             position: absolute;
             text-align: center;
             left: 38%;
@@ -25,31 +27,29 @@
             position: absolute;
             left: 37%;
             top: 30%;
-            width: 400px;
+            width: 25rem;
             height: 200px;
             border: 1px solid;
         }
 
         input {
-          margin-left:110px;
-          margin-top: 25px;
+        margin-left:110px;
+        margin-top: 25px;
         }
 
         label#lb_nome {
             position: absolute;
             left: 27%;
             top: 10%;
-           
-            
-       }
+    }
 
-       label#lb_sobrenome {
+    label#lb_sobrenome {
             position: absolute;
             left: 27%;
             top: 34%;
-           
+
             
-       }
+}
 
         input#btn {
             position: absolute;
@@ -59,7 +59,7 @@
 
         section{
             width: 900px;
-            height:310px;
+            height:260px;
             background-color: aqua;
             position: absolute;
             top: 55%;
@@ -67,7 +67,6 @@
             padding: 10px;
         }
 
-      
     </style>
 </head>
 <body>
@@ -89,13 +88,7 @@
             Os dados são visíveis na barra de endereços do navegador.
             Normalmente usado para enviar dados que não precisam ser seguros, como pesquisas ou solicitações de página.
             É mais eficiente para transferência de dados pequenos. <br>
-            POST:
-            O método POST envia os dados do formulário no corpo da requisição HTTP.
-            Os dados não são visíveis na URL, tornando-os mais seguros para enviar informações sensíveis, como senhas.
-            Não há limite específico de tamanho para os dados enviados pelo método POST.
-            Os dados não são visíveis na barra de endereços do navegador.
-            Normalmente usado para enviar dados sensíveis ou grandes, como formulários de login, upload de arquivos, etc.
-            É menos eficiente que o método GET para transferência de dados pequenos, mas é mais seguro e mais apropriado para transferência de dados sensíveis. <br> <br> POST:
+            . <br> <br> POST:
             O método POST envia os dados do formulário no corpo da requisição HTTP.
             Os dados não são visíveis na URL, tornando-os mais seguros para enviar informações sensíveis, como senhas.
             Não há limite específico de tamanho para os dados enviados pelo método POST.
