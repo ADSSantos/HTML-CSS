@@ -12,65 +12,66 @@
 
         body {
             display: flex;
+            flex-direction: column;
             background-color: aquamarine;
         }
 
-        h1 {
-            display: block;
-            position: absolute;
-            text-align: center;
-            left: 38%;
-            top: 10%;
+        header > h1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        form {
-            position: absolute;
-            left: 37%;
-            top: 30%;
+         form {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
             width: 25rem;
             height: 200px;
             border: 1px solid;
         }
 
         input {
-        margin-left:110px;
-        margin-top: 25px;
+        align-self: center;
+        width: 50%;
+        margin-top: -20px;
         }
 
-        label#lb_nome {
-            position: absolute;
-            left: 27%;
-            top: 10%;
+        label {
+            display: flex;
+            align-self: center;
+            margin-right: 30%;
+            margin-top: 10px;
+            padding: 2%;
+            width: 80px;
+          
     }
 
-    label#lb_sobrenome {
-            position: absolute;
-            left: 27%;
-            top: 34%;
+   
 
             
-}
+
 
         input#btn {
-            position: absolute;
-            left: 15%;
-            top: 50%;
+            align-items: center;
+            padding: 5px;
+            margin: auto;
+            width: 40%;
         }
 
         section{
-            width: 900px;
-            height:260px;
+            align-self: center;
+            margin-top: 5%;
             background-color: aqua;
-            position: absolute;
-            top: 55%;
-            left:25%;
-            padding: 10px;
+            padding: 20px;
         }
 
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulario.</h1>
+    <header>
+        <h1>Meu primeiro formulario</h1>
+    </header>
 
     <form autocomplete="on" action="cadastro.php" method="post">
         <label for="nome" id="lb_nome">Nome:</label> <br> <input type="text" name="entrada" id="nome">
